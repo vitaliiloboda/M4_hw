@@ -7,7 +7,6 @@ html {
 }
 
 .container {
-  /* background-color: lightblue; */
   margin: 0 auto;
   width: 1110px; 
 }
@@ -40,6 +39,14 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   line-height: 32px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.site-logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
 }
 
 .menu {
@@ -102,6 +109,17 @@ h2 {
   text-transform: uppercase;
   line-height: 32px;
   text-align: center;
+  display: block;
+}
+
+h2::after {
+  content: " ";
+  display: block;
+  margin-left: 474px;
+  margin-top: 32px;
+  width: 164px; 
+  height: 7px;
+  background-color: #4ec6ab;
 }
 
 .products {
@@ -110,7 +128,7 @@ h2 {
 
 .products h2 {
   margin-top: 0;
-  margin-bottom: 130px;
+  margin-bottom: 92px;
 }
 
 .products-list {
@@ -135,11 +153,11 @@ h2 {
   text-decoration: none;
 }
 
-.products-list-item-title:hover, .products-list-item-title:focus {
+.products-list-item-title:hover {
   background-color: #1abc9c;
 }
 
-.products-list-item-price:hover,  .products-list-item-price:focus {
+.products-list-item-price:hover {
   background-color: #7fd9c7;
 }
 
@@ -168,8 +186,12 @@ h2 {
   text-align: center;
 }
 
+.products-list-item-price::before {
+  content: "\0024";
+}
+
 .news h2 {
-  margin-bottom: 120px;
+  margin-bottom: 81px;
 }
 
 .news-list {
@@ -187,11 +209,6 @@ h2 {
   margin-right: 30px;
 }
 
-/* .news-list li:not(:last-child) {
-  margin-right: 28px;
-} */
-
-
 .news-list a {
   text-decoration: none;
   color: #ffffff;
@@ -204,8 +221,17 @@ h2 {
   font-size: 18px;
   color: #555252;
   line-height: 26px;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   margin-top: 0;
+}
+
+.news-list-item-heading::after {
+  content: "";
+  width: 136px;
+  height: 3px;
+  margin-top: 11px;
+  background-color: #4ec6ab;
+  display: inline-block;
 }
 
 .news-list-item-text {
@@ -226,9 +252,7 @@ h2 {
   display: inline-block;
   border: 1px solid #4ec6ab;
   background-color: #4ec6ab;
-  /* margin-bottom: 81px; */
-  width: 160px;
-  height: 51px;
+  margin-bottom: 81px;
   border-radius: 3px;
   font-size: 16px;
   line-height: 26px;
@@ -236,7 +260,7 @@ h2 {
   font-weight: 300;
   text-align: center;
   cursor: pointer;
-  padding-top: 13px;
+  padding: 15px 42px;
 }
 
 
