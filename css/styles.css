@@ -1,0 +1,260 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  /* background-color: lightblue; */
+  margin: 0 auto;
+  width: 1110px; 
+}
+
+body {
+  margin-top: 36px;
+}
+
+.site-header {
+  margin-bottom: 104px;
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.site-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #555252;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 32px;
+}
+
+.menu {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 11px;
+  float: right;
+  height: 50px;
+}
+
+.menu-list {
+  padding: 0;
+}
+
+.menu-list li {
+  float: left;
+}
+
+.menu-list li:nth-child(1) {
+  margin-right: 34px;
+}
+
+.menu-list li:nth-child(2) {
+  margin-right: 38px;
+}
+
+.menu-list li:nth-child(3) {
+  margin-right: 30px;
+}
+
+.menu-list li:nth-child(4) {
+  margin-right: 28px;
+}
+
+.menu-list li:nth-child(5) {
+  margin-right: 34px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #0f0101;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+  color: #1abc9c;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #515151;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
+}
+
+.products {
+  margin-bottom: 104px;
+}
+
+.products h2 {
+  margin-top: 0;
+  margin-bottom: 130px;
+}
+
+.products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products-list li {
+  float: left;
+}
+
+.products-list li:not(:nth-child(4n+4)) {
+  margin-right: 30px;
+}
+
+.products-list li:not(:nth-last-child(-n+4)) {
+  margin-bottom: 30px;
+}
+
+.products-list-item a {
+  text-decoration: none;
+}
+
+.products-list-item-title:hover, .products-list-item-title:focus {
+  background-color: #1abc9c;
+}
+
+.products-list-item-price:hover,  .products-list-item-price:focus {
+  background-color: #7fd9c7;
+}
+
+.products-list-item-title, .products-list-item-price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.products-list-item-title {
+  background-color: #323232;
+  float: left;
+  width: 200px;
+  padding-left: 12px;
+}
+
+.products-list-item-price {
+  background-color: #8c8c8c;
+  float: right;
+  width: 55px;
+  text-align: center;
+}
+
+.news h2 {
+  margin-bottom: 120px;
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  float: left;
+  width: 350px;
+}
+
+.news-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .news-list li:not(:last-child) {
+  margin-right: 28px;
+} */
+
+
+.news-list a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 26px;
+}
+
+.news-list-item-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #555252;
+  line-height: 26px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.news-list-item-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555252;
+  line-height: 26px;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+
+.news-list-item img {
+  margin-bottom: 14px;
+}
+
+.read-more {
+  display: inline-block;
+  border: 1px solid #4ec6ab;
+  background-color: #4ec6ab;
+  /* margin-bottom: 81px; */
+  width: 160px;
+  height: 51px;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 13px;
+}
+
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
